@@ -1,0 +1,16 @@
+@import 'imports/variables.css';
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../typography/Orbitron-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat Regular';
+  src: url('../typography/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat SemiBold';
+  src: url('../typography/Montserrat-SemiBold.ttf') format('truetype');
+}
