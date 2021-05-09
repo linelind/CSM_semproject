@@ -6,53 +6,71 @@
     <meta name="description" content="Come join us at the Community Science Museum where we’re committed to making science accessible to all." />
     <title>CSM | Home</title>
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="images/logo_csm.jpg" alt="Logo Community Science Museum" /></a>
+      <a href="index.html"><img src="images/logo_csm.jpg" alt="Logo Community Science Museum" class="logo" /></a>
+      <label for="menu-bars"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="menu-bars" />
       <nav>
         <ul>
           <li><a href="index.html" class="current">Home</a></li>
-          <li><a href="visit.html" class="current">Visit</a></li>
-          <li><a href="about.html" class="current">About us</a></li>
-          <li><a href="explore.html" class="current">Explore</a></li>
-          <li><a href="exhibitions.html" class="current">Exhibitions</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="exhibitions.html">Exhibitions</a></li>
         </ul>
       </nav>
     </header>
     <main>
+      <img src="images/homepage_cover.jpg" alt="A girl is using virtual reality glasses." class="cover-image" />
       <section>
-        <img src="images/homepage_cover.jpg" alt="A girl is using virtual reality glasses. " />
         <h1>Welcome to CMS</h1>
-        <p>Let's explore together</p>
+        <p class="motto">Let's explore together</p>
       </section>
-      <section>
+      <section class="home-hours">
         <h2>Opening hours</h2>
         <p>Tuesday – Thursday: 10 – 16</p>
         <p>Friday: 10 – 19</p>
         <p>Saturday: 9 – 16</p>
         <p>Sunday: 9 – 13</p>
-        <a href="visit.html">Visit</a>
+        <div class="visit-link">
+          <a href="visit.html">Visit</a>
+        </div>
       </section>
-      <section>
+
+      <section class="home_explore">
         <h2>Explore</h2>
-        <div>
-          <h3>For kids</h3>
-          <a href="explore.html">Read more</a>
-          <img src="images/explore_kids.jpg" alt="A child is using virtual reality glasses while looking excited." />
+        <div class="explore-list explore_red">
+          <div class="explore-list_text">
+            <h3>For kids</h3>
+            <a href="visit.html">Read more</a>
+          </div>
+          <div class="explore-list_image">
+            <img src="images/explore_kids.jpg" alt="A child is using virtual reality glasses while looking excited." />
+          </div>
         </div>
-        <div>
-          <h3>For teachers</h3>
-          <a href="explore.html">Read more</a>
-          <img src="images/explore_teachers_alt2.jpg" alt="Students are working together to solve a problem." />
+        <div class="explore-list explore_green">
+          <div class="explore-list_text">
+            <h3>For teachers</h3>
+            <a href="visit.html">Read more</a>
+          </div>
+          <div class="explore-list_image">
+            <img src="images/explore_teachers.jpg" alt="Students are working together to solve a problem." />
+          </div>
         </div>
-        <div>
-          <h3>For researchers</h3>
-          <a href="explore.html">Read more</a>
-          <img src="images/explore_researchers.jpg" alt="A scientist is placing a petri dish under a microscope." />
+        <div class="explore-list explore_blue">
+          <div class="explore-list_text">
+            <h3>For researchers</h3>
+            <a href="visit.html">Read more</a>
+          </div>
+          <div class="explore-list_image">
+            <img src="images/explore_researchers.jpg" alt="A scientist is placing a petri dish under a microscope." />
+          </div>
         </div>
       </section>
+
       <section>
         <h2>Special Events and Exhibitions</h2>
         <div>
@@ -76,9 +94,11 @@
       </section>
     </main>
     <footer>
-      <i class="fab fa-facebook-square"></i>
-      <i class="fab fa-instagram-square"></i>
-      <i class="fab fa-twitter-square"></i>
+      <div class="social-media">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-twitter-square"></i>
+      </div>
     </footer>
   </body>
 </html>

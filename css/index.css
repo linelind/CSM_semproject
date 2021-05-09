@@ -1,0 +1,50 @@
+.home-hours {
+  line-height: 1.25rem;
+}
+
+.home-hours a {
+  color: var(--white);
+  background-color: var(--purple);
+  padding: 7px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.visit-link {
+  margin-top: 30px;
+}
+
+.home_explore {
+  background-color: var(--light-purple);
+  margin: 40px -20px 10px -20px;
+  padding: 30px;
+}
+
+.home_explore h2 {
+  margin: 10px auto 25px auto;
+  text-align: center;
+}
+
+.home_explore a {
+  color: var(--white);
+}
+
+.explore-list {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.explore-list_text {
+  flex: 1;
+  text-align: left;
+  flex-grow: 2;
+}
+
+.explore-list_image {
+  flex: 2;
+  text-align: right;
+  flex-grow: 1;
+}

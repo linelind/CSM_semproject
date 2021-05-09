@@ -1,8 +1,13 @@
 @import 'imports/variables.css';
 
 @font-face {
-  font-family: 'Orbitron';
-  src: url('../typography/Orbitron-Regular.ttf') format('truetype');
+  font-family: 'Orbitron SemiBold';
+  src: url('../typography/Orbitron-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Orbitron Medium';
+  src: url('../typography/Orbitron-Medium.ttf') format('truetype');
 }
 
 @font-face {
@@ -13,4 +18,123 @@
 @font-face {
   font-family: 'Montserrat SemiBold';
   src: url('../typography/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+body {
+  margin: 0 20px;
+}
+
+/*Navigation*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  height: 75px;
+}
+
+nav {
+  display: none;
+  position: absolute;
+  top: 75px;
+  background: var(--white);
+  z-index: 100;
+  right: 0px;
+  text-align: center;
+}
+
+.logo {
+  max-height: 60px;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: block;
+  padding: 5px 40px;
+  margin-top: 20px;
+  font-size: 0.75rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+#menu-bars:checked ~ nav {
+  display: block;
+}
+
+#menu-bars {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 1.25rem;
+  color: var(--black);
+}
+
+.current {
+  background-color: var(--light-purple);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/*General styles*/
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-family: 'Orbitron SemiBold', Verdana, Tahoma, sans-serif;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-family: 'Orbitron Medium', Verdana, Tahoma, sans-serif;
+  color: var(--purple);
+  font-size: 1rem;
+  margin-top: 50px;
+}
+
+h3 {
+  font-family: 'Montserrat SemiBold', Verdana, Tahoma, sans-serif;
+  color: var(--white);
+  font-size: 0.875rem;
+}
+
+p,
+li,
+a {
+  font-family: 'Montserrat Regular', Verdana, Tahoma, sans-serif;
+  color: var(--black);
+  font-size: 0.75rem;
+}
+
+.motto {
+  font-size: 1rem;
+  margin-top: -10px;
+}
+
+.social-media {
+  color: var(--purple);
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 25px 80px;
+}
+
+.explore_red {
+  background-color: var(--red);
+}
+
+.explore_green {
+  background-color: var(--green);
+}
+
+.explore_blue {
+  background-color: var(--blue);
 }
