@@ -45,7 +45,7 @@ nav {
 }
 
 .logo {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 nav ul {
@@ -114,20 +114,17 @@ li,
 a,
 label,
 form option,
-.cta_send {
+.cta {
   font-family: 'Montserrat Regular', Verdana, Tahoma, sans-serif;
   color: var(--black);
 }
 
-p {
-  font-size: 0.625rem;
-}
-
+p,
 li,
 a,
 label,
 form option,
-.cta_send {
+.cta {
   font-size: 0.75rem;
 }
 
@@ -136,8 +133,7 @@ form option,
   margin-top: -10px;
 }
 
-.home-hours a,
-.cta_send {
+.cta {
   color: var(--white);
   background-color: var(--purple);
   padding: 7px 25px;

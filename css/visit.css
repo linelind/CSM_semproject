@@ -36,6 +36,11 @@
 
 .visit_starclub {
   background-color: var(--dark-purple);
+  min-height: 190px;
+}
+
+.visit_starclub h2 {
+  margin-right: 100px;
 }
 
 .visit_teachers {
@@ -44,6 +49,7 @@
 
 .visit_researchers {
   background-color: var(--blue);
+  min-height: 190px;
 }
 
 .visit_practicalinfo {
@@ -51,6 +57,10 @@
   padding: 10px 20px;
   border-radius: 5px;
   margin: 0 -20px;
+}
+
+.cta_contact {
+  margin-top: 40px;
 }
 
 .fas {
