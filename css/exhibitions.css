@@ -1,0 +1,14 @@
+img {
+  max-width: 100%;
+}
+
+.exhibition_purplesection {
+  background-color: var(--light-purple);
+  margin: 0 -30px;
+  padding: 20px 30px;
+}
+
+.exhibition_whitesection {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}

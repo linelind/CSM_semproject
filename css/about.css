@@ -1,0 +1,20 @@
+.about_info {
+  margin-top: 30px;
+}
+
+.about_contributions {
+  margin-top: 50px;
+}
+
+.contribution {
+  background-color: var(--purple);
+  padding: 10px 25px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+
+.about_contributions h2,
+.about_contributions p {
+  color: var(--white);
+  text-align: center;
+}

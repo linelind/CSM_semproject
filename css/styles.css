@@ -84,6 +84,10 @@ nav a {
 
 /*General styles*/
 
+main {
+  margin: 0 10px;
+}
+
 img {
   max-width: 100%;
 }
@@ -97,7 +101,6 @@ h2 {
   font-family: 'Orbitron Medium', Verdana, Tahoma, sans-serif;
   color: var(--purple);
   font-size: 1rem;
-  margin-top: 50px;
 }
 
 h3 {
@@ -111,6 +114,14 @@ li,
 a {
   font-family: 'Montserrat Regular', Verdana, Tahoma, sans-serif;
   color: var(--black);
+}
+
+p {
+  font-size: 0.625rem;
+}
+
+li,
+a {
   font-size: 0.75rem;
 }
 
