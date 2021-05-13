@@ -18,3 +18,29 @@
   color: var(--white);
   text-align: center;
 }
+
+.about_contact {
+  background-color: var(--light-purple);
+  margin: 50px -30px 0 -30px;
+  padding: 20px 30px;
+}
+
+.form-wrapper > * {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+select,
+textarea {
+  border-radius: 5px;
+  border: 2px solid var(--purple);
+  margin-bottom: 15px;
+  margin-top: 5px;
+  padding: 10px 5px;
+}
+
+textarea {
+  width: 96%;
+  height: 85px;
+}

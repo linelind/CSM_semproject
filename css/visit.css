@@ -1,0 +1,58 @@
+.visit_info h2 {
+  margin-top: 30px;
+}
+
+.visit_info,
+.visit_explore {
+  margin-bottom: 50px;
+}
+
+.visit_explore h2,
+.visit_explore p {
+  color: var(--white);
+}
+
+.visit_explore img {
+  max-width: 30%;
+  float: right;
+  position: relative;
+  top: -30px;
+  padding-left: 20px;
+}
+
+.visit_kids,
+.visit_starclub,
+.visit_teachers,
+.visit_researchers {
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin: 20px -20px 0 -20px;
+}
+
+.visit_kids {
+  background-color: var(--red);
+}
+
+.visit_starclub {
+  background-color: var(--dark-purple);
+}
+
+.visit_teachers {
+  background-color: var(--green);
+}
+
+.visit_researchers {
+  background-color: var(--blue);
+}
+
+.visit_practicalinfo {
+  background-color: var(--light-purple);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 -20px;
+}
+
+.fas {
+  margin-left: 10px;
+}

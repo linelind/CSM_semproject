@@ -20,6 +20,7 @@
           <li><a href="visit.html">Visit</a></li>
           <li><a href="about.html" class="current">About us</a></li>
           <li><a href="exhibitions.html">Exhibitions</a></li>
+          <li><a href="about.html#contact">Contact us</a></li>
         </ul>
       </nav>
     </header>
@@ -51,6 +52,30 @@
           <p>Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be just the right person to enjoy an internship at the museum.</p>
         </section>
       </div>
+      <section class="about_contact">
+        <h2 id="contact">Contact us</h2>
+        <form action="form-success.php" method="POST">
+          <div class="form-wrapper">
+            <section class="contact-inputs">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="Name" required />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="Email" required />
+              <label for="topic">Role</label>
+              <select id="topic" name="Choose topic">
+                <option value="Visitor">Visitor</option>
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Researcher">Researcher</option>
+                <option value="Volunteer">Volunteer</option>
+              </select>
+            </section>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <input type="submit" value="Send" class="cta_send" />
+        </form>
+      </section>
     </main>
     <footer>
       <div class="social-media">
