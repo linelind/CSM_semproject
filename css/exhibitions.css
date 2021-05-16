@@ -14,9 +14,34 @@ main img {
 }
 
 /*tablet*/
-@media only screen and (min-width: 600px) and (max-width: 1199px) {
+@media only screen and (min-width: 600px) {
   .header_container {
     background-image: url(../images/exhibitions/exhibitions_cover.jpg);
     background-position-y: center;
+  }
+
+  .exhibition_container {
+    margin: 0 -60px;
+    padding: 30px 60px 50px 60px;
+  }
+
+  .exhibition_container p {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .exhibition_container {
+    display: flex;
+  }
+
+  .exhibit_text {
+    flex: 1;
+  }
+
+  .exhibit_image {
+    flex: 1;
+    margin: auto;
+    padding-left: 30px;
   }
 }

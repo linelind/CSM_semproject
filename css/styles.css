@@ -20,11 +20,11 @@
   src: url('../typography/Montserrat-SemiBold.ttf') format('truetype');
 }
 
+/*General styles*/
+
 body {
   margin: 0 20px;
 }
-
-/*Navigation*/
 
 header {
   position: fixed;
@@ -92,8 +92,6 @@ nav a {
   border-radius: 5px;
   padding: 10px;
 }
-
-/*General styles*/
 
 main {
   margin: 75px 10px 5px 10px;
@@ -186,14 +184,14 @@ form option,
   background-color: var(--blue);
 }
 
-/*Footer*/
-
 footer {
-  margin-top: 50px;
+  padding-top: 40px;
+  max-width: 350px;
+  text-align: center;
+  margin: auto;
 }
 
 footer p {
-  text-align: center;
   font-size: 0.5rem;
   color: var(--dark-purple);
   margin-bottom: -8px;
@@ -207,19 +205,26 @@ footer p {
   margin: 25px 80px;
 }
 
-/*tablet*/
-@media only screen and (min-width: 600px) and (max-width: 1199px) {
-  body {
-    margin: 0 50px;
-  }
-
-  header {
-    height: 100px;
-  }
-
+/*Screen sizes*/
+@media only screen and (min-width: 600px) {
   .logo {
-    max-height: 80px;
     padding-left: 40px;
+  }
+
+  .cover-image {
+    display: none;
+  }
+
+  .header_container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+
+  .header_text {
+    background-color: var(--white);
+    position: relative;
+    padding: 10px 60px;
   }
 
   .fa-bars {
@@ -229,25 +234,161 @@ footer p {
 
   nav {
     top: 100px;
+    min-width: 300px;
   }
 
-  .cover-image {
-    display: none;
+  nav li {
+    margin-bottom: 35px;
+  }
+
+  body {
+    margin: 0 50px;
+  }
+
+  header {
+    height: 100px;
   }
 
   .header_container {
+    height: 450px;
     margin: 100px -60px 0 -60px;
-    height: 350px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 50px;
   }
 
   .header_text {
-    background-color: var(--white);
-    position: relative;
-    top: 222px;
+    top: 299px;
     max-width: 50%;
-    padding: 10px 60px;
+  }
+
+  .logo {
+    max-height: 70px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  p,
+  li,
+  a,
+  label,
+  form option,
+  .cta {
+    font-size: 1rem;
+  }
+
+  .motto {
+    font-size: 1.25rem;
+  }
+
+  footer {
+    max-width: 400px;
+  }
+
+  footer p {
+    font-size: 0.75rem;
+  }
+
+  .social-media {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    margin: 0 100px;
+  }
+
+  header {
+    height: 120px;
+  }
+
+  nav {
+    top: 10px;
+    background: none;
+    display: inline;
+  }
+
+  nav ul {
+    padding: 0;
+    padding-right: 40px;
+  }
+
+  nav li {
+    display: inline-flex;
+    padding-right: 10px;
+    margin-top: 0;
+    font-size: 0.75rem;
+  }
+
+  nav a {
+    color: var(--black);
+  }
+
+  header .fas {
+    display: none;
+  }
+
+  .current {
+    border: 0;
+    position: relative;
+    background-color: var(--light-purple);
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .logo {
+    max-height: 80px;
+  }
+
+  .header_container {
+    height: 550px;
+    margin: 100px -110px 0 -110px;
+  }
+
+  .header_text {
+    top: 369px;
+    padding-left: 110px;
+    padding-top: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.375rem;
+  }
+
+  p,
+  label,
+  form option,
+  .cta {
+    font-size: 1.25rem;
+  }
+
+  .motto {
+    font-size: 1.5rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  nav a {
+    font-size: 1.25rem;
   }
 }

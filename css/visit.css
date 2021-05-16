@@ -165,7 +165,7 @@ textarea {
 }
 
 /*tablet*/
-@media only screen and (min-width: 600px) and (max-width: 1199px) {
+@media only screen and (min-width: 600px) {
   .header_container {
     background-image: url(../images/visit/visit_cover.jpg);
     background-position-y: center;
