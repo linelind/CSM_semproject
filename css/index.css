@@ -6,45 +6,54 @@ h2 {
   line-height: 1.25rem;
 }
 
+.cta-visit {
+  background-color: var(--dark-purple);
+}
+
+/*Explore*/
+
 .home_explore {
-  background-color: var(--light-purple);
+  background-color: var(--black);
   margin: 40px -30px 10px -30px;
   padding: 30px 20px;
+  background-image: url('../images/explore/explore_astronaut.jpg');
+  background-size: 270px;
+  background-repeat: no-repeat;
+  background-position-x: 220px;
+  background-position-y: 50px;
 }
 
 .home_explore h2 {
-  margin: 10px auto 25px auto;
-  text-align: center;
-}
-
-.home_explore a {
   color: var(--white);
+  text-align: center;
+  margin-top: 10px;
 }
 
-.explore-list {
-  padding: 30px;
+.explore-cta {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 200px;
+  margin-top: 40px;
+  margin-left: 15px;
 }
 
-.explore-list_text {
-  flex: 1;
-  text-align: left;
-  flex-grow: 2;
+.cta_red,
+.cta_green,
+.cta_blue {
+  color: var(--white);
+  padding: 20px 40px;
+  margin-bottom: 20px;
 }
 
-.explore-list_image {
-  flex: 2;
-  text-align: right;
-  flex-grow: 1;
-}
+/*Explore*/
 
 .new_heading {
   text-align: center;
 }
 
 .home_news {
-  background-color: var(--black);
+  background-color: var(--dark-purple);
   padding: 20px;
   margin: 30px -10px;
   border-radius: 5px;
@@ -59,4 +68,12 @@ h2 {
   position: relative;
   float: right;
   top: -40px;
+}
+
+/*tablet*/
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  .header_container {
+    background-image: url(../images/home/homepage_cover.jpg);
+    background-position-y: -60px;
+  }
 }

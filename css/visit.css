@@ -1,68 +1,173 @@
-.visit_info h2 {
-  margin-top: 30px;
+.admission {
+  background-color: var(--light-blue);
+  margin: 30px -30px 0 -30px;
+  padding: 20px 30px;
+  display: flex;
 }
 
-.visit_info,
-.visit_explore {
-  margin-bottom: 50px;
+.admission img {
+  border-radius: 1000px;
 }
 
-.visit_explore h2,
-.visit_explore p {
+.admission-image {
+  flex: 1;
+  position: relative;
+  top: 20px;
+  padding-left: 10px;
+}
+
+.admission-info {
+  flex: 2;
+}
+
+.visit_container {
+  margin: 0 -30px 30px -30px;
+  background-image: url(../images/visit/visit_location.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  background-position-x: center;
+  padding: 20px 5px;
+}
+
+.visit_info {
+  background-color: var(--white);
+  padding: 20px;
+  max-width: 45%;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.heading_hours {
+  margin-top: 50px;
+}
+
+.accessibility {
+  background-color: var(--blue);
   color: var(--white);
 }
 
-.visit_explore img {
-  max-width: 30%;
-  float: right;
-  position: relative;
-  top: -30px;
+.accessibility h2,
+.accessibility p {
+  color: var(--white);
+}
+
+.food,
+.shop {
+  background-color: var(--light-purple);
+}
+
+.food h2,
+.food p,
+.shop h2,
+.shop p {
+  color: var(--purple);
+}
+
+.accessibility,
+.food,
+.shop {
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.info_text {
+  flex: 2;
+}
+
+.info_image {
+  flex: 1;
+  margin: auto;
   padding-left: 20px;
 }
 
-.visit_kids,
-.visit_starclub,
-.visit_teachers,
-.visit_researchers {
+.food img,
+.shop img {
+  border-radius: 1000px;
+}
+
+.fa-wheelchair {
+  font-size: 3.5rem;
+}
+
+/*Contact*/
+
+.contact {
+  background-color: var(--light-blue);
+  margin: 50px -30px 0 -30px;
+  padding: 20px 30px;
+}
+
+.contact h2,
+label {
+  color: var(--blue);
+}
+
+.form-wrapper > * {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+select,
+textarea {
   border-radius: 5px;
-  padding: 10px 20px;
-  margin-top: 20px;
-  margin: 20px -20px 0 -20px;
+  border: 2px solid var(--blue);
+  margin-bottom: 15px;
+  margin-top: 5px;
+  padding: 10px 5px;
 }
 
-.visit_kids {
-  background-color: var(--red);
+textarea {
+  width: 96%;
+  height: 85px;
+  margin-bottom: 40px;
 }
 
-.visit_starclub {
-  background-color: var(--dark-purple);
-  min-height: 190px;
-}
-
-.visit_starclub h2 {
-  margin-right: 100px;
-}
-
-.visit_teachers {
-  background-color: var(--green);
-}
-
-.visit_researchers {
+.cta-send {
   background-color: var(--blue);
-  min-height: 190px;
 }
 
-.visit_practicalinfo {
-  background-color: var(--light-purple);
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin: 0 -20px;
+/*mobil*/
+@media only screen and (max-width: 599px) {
+  .admission,
+  .accessibility,
+  .food,
+  .shop {
+    flex-direction: column;
+  }
+
+  .admission img {
+    max-width: 80%;
+  }
+
+  .info_image {
+    position: relative;
+    max-width: 70%;
+    padding-left: 0;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .accessibility img {
+    max-width: 60%;
+  }
+
+  .admission img {
+    margin-bottom: 50px;
+  }
+
+  .container {
+    text-align: center;
+  }
 }
 
-.cta_contact {
-  margin-top: 40px;
-}
-
-.fas {
-  margin-left: 10px;
+/*tablet*/
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  .header_container {
+    background-image: url(../images/visit/visit_cover.jpg);
+    background-position-y: center;
+  }
 }

@@ -27,25 +27,34 @@ body {
 /*Navigation*/
 
 header {
+  position: fixed;
+  min-width: 100%;
+  background-color: var(--white);
+  height: 75px;
+  left: 0;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 20px;
-  height: 75px;
+  z-index: 100;
+  border-bottom: 1px solid var(--light-purple);
 }
 
 nav {
   display: none;
   position: absolute;
-  top: 75px;
-  background: var(--white);
-  z-index: 100;
+  top: 76px;
+  background: var(--dark-purple);
+  z-index: 50;
   right: 0px;
   text-align: center;
+  min-width: 211px;
+  border-radius: 0 0 5px 5px;
 }
 
 .logo {
   max-height: 50px;
+  padding-left: 20px;
 }
 
 nav ul {
@@ -54,13 +63,14 @@ nav ul {
 
 nav li {
   display: block;
-  padding: 5px 40px;
+  padding: 10px 60px;
   margin-top: 20px;
   font-size: 0.75rem;
 }
 
 nav a {
   text-decoration: none;
+  color: var(--white);
 }
 
 #menu-bars:checked ~ nav {
@@ -74,10 +84,11 @@ nav a {
 .fa-bars {
   font-size: 1.25rem;
   color: var(--black);
+  padding-right: 40px;
 }
 
 .current {
-  background-color: var(--light-purple);
+  border: 2px solid var(--light-purple);
   border-radius: 5px;
   padding: 10px;
 }
@@ -85,11 +96,16 @@ nav a {
 /*General styles*/
 
 main {
-  margin: 0 10px;
+  margin: 75px 10px 5px 10px;
 }
 
 img {
   max-width: 100%;
+}
+
+.cover-image {
+  max-width: 120%;
+  margin: auto -30px;
 }
 
 h1 {
@@ -99,7 +115,7 @@ h1 {
 
 h2 {
   font-family: 'Orbitron Medium', Verdana, Tahoma, sans-serif;
-  color: var(--purple);
+  color: var(--dark-purple);
   font-size: 1rem;
 }
 
@@ -107,6 +123,10 @@ h3 {
   font-family: 'Montserrat SemiBold', Verdana, Tahoma, sans-serif;
   color: var(--white);
   font-size: 0.875rem;
+}
+
+p {
+  line-height: 2;
 }
 
 p,
@@ -133,9 +153,12 @@ form option,
   margin-top: -10px;
 }
 
+.larger-text {
+  font-size: 0.875rem;
+}
+
 .cta {
   color: var(--white);
-  background-color: var(--purple);
   padding: 7px 25px;
   border-radius: 5px;
   text-decoration: none;
@@ -148,22 +171,83 @@ form option,
   margin-top: 30px;
 }
 
+.explore_red,
+.cta_red {
+  background-color: var(--red);
+}
+
+.explore_green,
+.cta_green {
+  background-color: var(--green);
+}
+
+.explore_blue,
+.cta_blue {
+  background-color: var(--blue);
+}
+
+/*Footer*/
+
+footer {
+  margin-top: 50px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.5rem;
+  color: var(--dark-purple);
+  margin-bottom: -8px;
+}
+
 .social-media {
-  color: var(--purple);
+  color: var(--dark-purple);
   font-size: 2rem;
   display: flex;
   justify-content: space-evenly;
   margin: 25px 80px;
 }
 
-.explore_red {
-  background-color: var(--red);
-}
+/*tablet*/
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  body {
+    margin: 0 50px;
+  }
 
-.explore_green {
-  background-color: var(--green);
-}
+  header {
+    height: 100px;
+  }
 
-.explore_blue {
-  background-color: var(--blue);
+  .logo {
+    max-height: 80px;
+    padding-left: 40px;
+  }
+
+  .fa-bars {
+    padding-right: 70px;
+    font-size: 2rem;
+  }
+
+  nav {
+    top: 100px;
+  }
+
+  .cover-image {
+    display: none;
+  }
+
+  .header_container {
+    margin: 100px -60px 0 -60px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+  }
+
+  .header_text {
+    background-color: var(--white);
+    position: relative;
+    top: 222px;
+    max-width: 50%;
+    padding: 10px 60px;
+  }
 }

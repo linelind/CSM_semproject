@@ -20,22 +20,28 @@
           <li><a href="visit.html">Visit</a></li>
           <li><a href="about.html" class="current">About us</a></li>
           <li><a href="exhibitions.html">Exhibitions</a></li>
-          <li><a href="about.html#contact">Contact us</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="visit.html#contact">Contact us</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <img src="images/about_cover.jpg" alt="A young woman dressed in a lab coat inspects a large machine." class="cover-image" />
-        <h1>About us</h1>
-        <p class="motto">Let's explore together</p>
+      <section class="header_container">
+        <img src="images/about/about_cover.jpg" alt="A young woman is working on a robot." class="cover-image" />
+        <div class="header_text">
+          <h1>About us</h1>
+          <p class="motto">We’re committed to making science accessible to all.</p>
+        </div>
       </section>
       <div class="about_info">
-        <p>Come join us at the Community Science Museum where we’re committed to making science accessible to all.</p>
-        <p>Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
-        <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p>
         <p>We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits – they only come to life at night when everyone’s gone home).</p>
       </div>
+      <section class="quote-container">
+        <img src="images/about/about_quote.jpg" alt="A woman smiling and studying plants around her." />
+        <i class="fas fa-quote-left"></i>
+        <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p>
+        <i class="fas fa-quote-right"></i>
+      </section>
       <div class="about_contributions">
         <section class="contribution">
           <h2>Support</h2>
@@ -52,32 +58,15 @@
           <p>Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be just the right person to enjoy an internship at the museum.</p>
         </section>
       </div>
-      <section class="about_contact">
-        <h2 id="contact">Contact us</h2>
-        <form action="form-success.php" method="POST">
-          <div class="form-wrapper">
-            <section class="contact-inputs">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="Name" required />
-              <label for="email">Email</label>
-              <input type="email" id="email" name="Email" required />
-              <label for="topic">Role</label>
-              <select id="topic" name="Choose topic">
-                <option value="Visitor">Visitor</option>
-                <option value="Student">Student</option>
-                <option value="Teacher">Teacher</option>
-                <option value="Researcher">Researcher</option>
-                <option value="Volunteer">Volunteer</option>
-              </select>
-            </section>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <input type="submit" value="Send" class="cta" />
-        </form>
+      <section class="question-container">
+        <h2>Got a question for us?</h2>
+        <p>Please feel free to send us a message with any questions you may have.</p>
+        <a href="visit.html#contact" class="cta-contact">Contact us</a>
       </section>
     </main>
     <footer>
+      <p>Community Science Museum, Oslo</p>
+      <p>Please check out our social media channels</p>
       <div class="social-media">
         <i class="fab fa-facebook-square"></i>
         <i class="fab fa-instagram-square"></i>

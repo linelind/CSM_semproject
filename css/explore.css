@@ -1,0 +1,97 @@
+main {
+  background-color: var(--black);
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 0 15px 50px 15px;
+}
+
+main h1,
+main h2,
+main p,
+main a {
+  color: var(--white);
+}
+
+a {
+  font-size: 0.875rem;
+}
+
+.explore_heading {
+  background-image: url(../images/explore/explore_astronaut.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 200px;
+  background-position-x: right;
+  background-position-y: top;
+  margin-right: -30px;
+}
+
+.explore_heading h1,
+.explore_heading p {
+  width: 55%;
+  position: relative;
+  top: 50px;
+  margin-left: 20px;
+}
+
+.visit_kids {
+  margin-top: 50px;
+}
+
+.visit_kids,
+.visit_starclub,
+.visit_teachers,
+.visit_researchers {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.visit_kids,
+.visit_starclub,
+.visit_teachers {
+  margin-bottom: 50px;
+}
+
+.visit_kids,
+.visit_teachers,
+.visit_researchers {
+  padding-bottom: 40px;
+}
+
+.visit_kids {
+  background-color: var(--red);
+}
+
+.visit_starclub {
+  background-color: var(--dark-purple);
+}
+
+.visit_teachers {
+  background-color: var(--green);
+}
+
+.visit_researchers {
+  background-color: var(--blue);
+}
+
+.visit_starclub {
+  display: flex;
+}
+
+.starclub_text {
+  flex: 2;
+}
+
+.starclub_image {
+  flex: 1;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.visit_starclub img {
+  border-radius: 5px;
+}
+
+.explore-text {
+  padding-bottom: 40px;
+}
