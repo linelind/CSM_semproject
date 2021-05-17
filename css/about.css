@@ -2,6 +2,12 @@
   background-color: var(--light-blue);
   margin: 20px -30px;
   padding: 30px 30px 50px 30px;
+  color: var(--blue);
+}
+
+.quote-container p {
+  color: var(--blue);
+  font-style: italic;
 }
 
 .quote-container img {
@@ -69,5 +75,61 @@
   .header_container {
     background-image: url(../images/about/about_cover.jpg);
     background-position-y: center;
+    margin-bottom: 80px;
+  }
+
+  .quote-container {
+    margin: 60px -60px;
+    padding: 30px 60px 60px 60px;
+  }
+
+  .quote-container img {
+    margin-bottom: 50px;
+  }
+
+  .contribution {
+    max-width: 450px;
+    margin: 50px auto;
+  }
+
+  .question-container {
+    margin-left: -60px;
+    margin-right: -60px;
+    height: 250px;
+    background-position-y: -100px;
+  }
+
+  .question-container h2,
+  .question-container p {
+    max-width: 50%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .quote-container,
+  .quote-container {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .quote-container img {
+    margin-bottom: -30px;
+  }
+
+  .quote-container_image,
+  .quote-container_text {
+    flex: 1;
+    margin: auto;
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .question-container {
+    height: 300px;
+    background-position-y: -190px;
+    background-position-x: 280px;
+    padding-left: 100px;
+    padding-top: 60px;
   }
 }

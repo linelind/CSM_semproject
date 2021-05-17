@@ -35,7 +35,7 @@
   padding: 20px;
   max-width: 45%;
   border-radius: 5px;
-  margin: 20px;
+  margin: 20px 20px 20px 25px;
 }
 
 .heading_hours {
@@ -93,7 +93,6 @@
 }
 
 /*Contact*/
-
 .contact {
   background-color: var(--light-blue);
   margin: 50px -30px 0 -30px;
@@ -130,7 +129,17 @@ textarea {
   background-color: var(--blue);
 }
 
-/*mobil*/
+form,
+.contact h2 {
+  max-width: 450px;
+  margin: auto;
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+}
+
+/*screen sizes*/
 @media only screen and (max-width: 599px) {
   .admission,
   .accessibility,
@@ -140,7 +149,8 @@ textarea {
   }
 
   .admission img {
-    max-width: 80%;
+    max-width: 60%;
+    margin-bottom: 50px;
   }
 
   .info_image {
@@ -155,12 +165,13 @@ textarea {
     max-width: 60%;
   }
 
-  .admission img {
-    margin-bottom: 50px;
-  }
-
   .container {
     text-align: center;
+  }
+
+  .food img,
+  .shop img {
+    max-width: 200px;
   }
 }
 
@@ -170,4 +181,91 @@ textarea {
     background-image: url(../images/visit/visit_cover.jpg);
     background-position-y: center;
   }
+
+  .admission,
+  .visit_container {
+    margin: 0 -60px;
+    padding: 60px;
+  }
+
+  .admission-image {
+    margin-left: 30px;
+  }
+
+  .admission img {
+    max-height: 280px;
+  }
+
+  .visit_info {
+    max-width: 320px;
+    margin-left: 0;
+    padding-left: 30px;
+  }
+
+  .container {
+    max-width: 670px;
+    margin: 40px auto;
+  }
+
+  .container img {
+    max-width: 160px;
+    margin-left: 30px;
+  }
+
+  .accessibility img {
+    max-width: 140px;
+    margin-left: 50px;
+  }
+
+  .contact {
+    margin: 0 -60px;
+    padding: 30px 90px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .admission,
+  .visit_container {
+    margin: 0 -110px;
+    padding: 60px 110px;
+  }
+
+  .admission img {
+    max-height: 350px;
+  }
+
+  .contact {
+    margin: 0 -110px;
+  }
+
+  .contact h2 {
+    text-align: center;
+    margin: 30px auto 50px auto;
+  }
+
+  .contact-inputs {
+    margin-right: 50px;
+    min-width: 300px;
+  }
+
+  .contact-message {
+    margin-left: 50px;
+    min-width: 300px;
+  }
+
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  textarea {
+    height: 185px;
+  }
+
+  .cta-send {
+    margin-left: -125px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
 }

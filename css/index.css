@@ -70,10 +70,125 @@ h2 {
   top: -40px;
 }
 
-/*tablet*/
+/*screen sizes*/
 @media only screen and (min-width: 600px) {
   .header_container {
     background-image: url(../images/home/homepage_cover.jpg);
     background-position-y: top;
+  }
+
+  .home_explore {
+    margin: 100px -60px 20px -60px;
+    padding: 30px 50px;
+    background-size: 330px;
+    background-position-x: right;
+    background-position-y: 30px;
+  }
+
+  .explore-cta {
+    width: 250px;
+  }
+
+  .new_heading {
+    margin: 100px auto 50px auto;
+  }
+
+  .home_news {
+    padding: 50px 40px;
+    max-width: 588px;
+    margin: 80px auto;
+  }
+
+  .star_icon {
+    max-width: 70px;
+    position: relative;
+    float: right;
+    top: -90px;
+  }
+
+  footer {
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .home_container {
+    display: flex;
+  }
+
+  .home-hours {
+    flex: 1;
+    background-color: var(--light-purple);
+    margin-top: 100px;
+    padding: 0 10px 50px 30px;
+  }
+
+  .home_explore {
+    flex: 2;
+    margin: 100px -60px 0 100px;
+    padding: 0 40px;
+    background-size: 300px;
+    background-position-x: right;
+    background-position-y: 30px;
+  }
+
+  .news_container {
+    display: flex;
+  }
+
+  .home_news {
+    max-width: 800px;
+  }
+
+  .news_text,
+  .news_image {
+    padding-top: 30px;
+  }
+
+  .news_text {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .news_image {
+    margin-right: -40px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home_container {
+    margin-top: 100px;
+  }
+
+  .home-hours {
+    padding: 0 50px 60px 40px;
+    max-width: 290px;
+    height: 360px;
+    margin: auto;
+    margin-right: 50px;
+  }
+
+  .home_explore {
+    padding-top: 35px;
+    background-position-x: right;
+    background-position-y: 30px;
+    max-width: 750px;
+    height: 385px;
+    margin: auto;
+  }
+
+  .explore-cta {
+    width: 300px;
+    margin-top: 60px;
+  }
+
+  .home_news {
+    max-width: 1000px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .home-hours {
+    max-width: 650px;
+    padding-left: 150px;
   }
 }

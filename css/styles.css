@@ -233,7 +233,7 @@ footer p {
   }
 
   nav {
-    top: 100px;
+    top: 101px;
     min-width: 300px;
   }
 
@@ -286,6 +286,10 @@ footer p {
 
   .motto {
     font-size: 1.25rem;
+  }
+
+  .larger-text {
+    font-size: 1.2rem;
   }
 
   footer {
@@ -354,7 +358,7 @@ footer p {
   }
 
   .header_text {
-    top: 369px;
+    top: 370px;
     padding-left: 110px;
     padding-top: 15px;
   }
@@ -380,6 +384,10 @@ footer p {
 
   .motto {
     font-size: 1.5rem;
+  }
+
+  .larger-text {
+    font-size: 1.4rem;
   }
 
   footer p {
