@@ -186,7 +186,21 @@ main p {
   }
 }
 
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1500px) {
+  body {
+    background-color: var(--black);
+  }
+
+  main {
+    margin: -20px;
+    padding: 80px;
+  }
+
+  .black-background {
+    background-color: var(--black);
+    padding: 20px;
+  }
+
   .explore_heading h1 {
     padding-top: 50px;
   }
@@ -195,11 +209,23 @@ main p {
   .explore_heading p {
     margin: auto;
     text-align: center;
+    margin-top: 50px;
   }
 
   .explore_heading {
     background-size: contain;
-    height: 400px;
+    background-position-y: 30px;
+    background-position-x: 1000px;
+    height: 450px;
     margin-right: -100px;
+  }
+
+  footer {
+    margin-top: -100px;
+  }
+
+  footer .fab,
+  footer p {
+    color: var(--white);
   }
 }

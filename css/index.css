@@ -190,9 +190,13 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 1700px) {
+@media only screen and (min-width: 1500px) {
+  .header_container {
+    background-position-y: -130px;
+  }
+
   .home-hours {
     max-width: 650px;
-    padding-left: 150px;
+    padding-left: 100px;
   }
 }

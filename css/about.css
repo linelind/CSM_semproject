@@ -61,7 +61,15 @@
   margin-bottom: 50px;
 }
 
-/*tablet*/
+/*screen sizes*/
+
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  .contribution {
+    max-width: 450px;
+    margin: 50px auto;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .header_container {
     background-image: url(../images/about/about_cover.jpg);
@@ -76,11 +84,6 @@
 
   .quote-container img {
     margin-bottom: 50px;
-  }
-
-  .contribution {
-    max-width: 450px;
-    margin: 50px auto;
   }
 
   .question-container {
@@ -138,5 +141,27 @@
     background-size: 600px;
     background-position-y: center;
     background-position-x: right;
+  }
+
+  .contribution {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px 100px;
+  }
+
+  .contribution h2,
+  .contribution p {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .about_info {
+    margin: 50px 100px;
+  }
+
+  .quote-container,
+  .question-container {
+    margin: 0;
   }
 }

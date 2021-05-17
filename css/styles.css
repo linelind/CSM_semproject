@@ -281,7 +281,8 @@ footer p {
     font-size: 1.75rem;
   }
 
-  h2 {
+  h2,
+  .motto {
     font-size: 1.25rem;
   }
 
@@ -296,10 +297,6 @@ footer p {
   form option,
   .cta {
     font-size: 1rem;
-  }
-
-  .motto {
-    font-size: 1.25rem;
   }
 
   .larger-text {
@@ -381,7 +378,8 @@ footer p {
     font-size: 2rem;
   }
 
-  h2 {
+  h2,
+  .motto {
     font-size: 1.5rem;
   }
 
@@ -396,10 +394,6 @@ footer p {
     font-size: 1.25rem;
   }
 
-  .motto {
-    font-size: 1.5rem;
-  }
-
   .larger-text {
     font-size: 1.4rem;
   }
@@ -409,8 +403,72 @@ footer p {
   }
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1500px) {
+  body {
+    max-width: 1500px;
+    margin: auto;
+    background-color: var(--light-purple);
+  }
+
+  .white-background {
+    background-color: var(--white);
+    padding: 20px;
+  }
+
   nav a {
     font-size: 1.25rem;
+  }
+
+  .header_container {
+    height: 650px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header_text {
+    top: 400px;
+    padding-left: 100px;
+  }
+
+  .logo {
+    margin-left: 130px;
+  }
+
+  nav ul {
+    padding-right: 180px;
+  }
+
+  h1 {
+    font-size: 3.125rem;
+  }
+
+  h2,
+  .motto {
+    font-size: 1.875rem;
+  }
+
+  h3 {
+    font-size: 1.625rem;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .logo {
+    margin-left: 210px;
+  }
+
+  nav ul {
+    padding-right: 250px;
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  .logo {
+    margin-left: 370px;
+  }
+
+  nav ul {
+    padding-right: 430px;
   }
 }
