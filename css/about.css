@@ -164,4 +164,9 @@
   .question-container {
     margin: 0;
   }
+  .question-container h2,
+  .question-container p,
+  .question-container a {
+    margin-left: 10px;
+  }
 }
