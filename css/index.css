@@ -10,6 +10,10 @@ h2 {
   background-color: var(--dark-purple);
 }
 
+.fa-clock {
+  margin-left: 20px;
+}
+
 /*Explore*/
 
 .home_explore {
@@ -46,7 +50,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-/*Explore*/
+/*News*/
 
 .new_heading {
   text-align: center;
