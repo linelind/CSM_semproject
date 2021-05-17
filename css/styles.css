@@ -164,6 +164,15 @@ form option,
   letter-spacing: 1px;
 }
 
+.cta-contact {
+  background-color: var(--white);
+  padding: 7px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 .visit-link,
 .cta_send {
   margin-top: 30px;
@@ -203,6 +212,11 @@ footer p {
   display: flex;
   justify-content: space-evenly;
   margin: 25px 80px;
+}
+
+#contact {
+  position: relative;
+  top: -100px;
 }
 
 /*Screen sizes*/

@@ -45,3 +45,10 @@ main img {
     padding-left: 30px;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .exhibition_container {
+    margin: 0 -110px;
+    padding: 50px 110px;
+  }
+}

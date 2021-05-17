@@ -7,13 +7,8 @@ main {
 
 main h1,
 main h2,
-main p,
-main a {
+main p {
   color: var(--white);
-}
-
-a {
-  font-size: 0.875rem;
 }
 
 .explore_heading {
@@ -34,14 +29,8 @@ a {
   margin-left: 20px;
 }
 
-.visit_kids {
-  margin-top: 50px;
-}
-
-.visit_kids,
-.visit_starclub,
-.visit_teachers,
-.visit_researchers {
+.explore-visit,
+.visit_starclub {
   padding: 10px 20px;
   border-radius: 5px;
 }
@@ -49,17 +38,16 @@ a {
 .visit_kids,
 .visit_starclub,
 .visit_teachers {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
-.visit_kids,
-.visit_teachers,
-.visit_researchers {
+.explore-visit {
   padding-bottom: 40px;
 }
 
 .visit_kids {
   background-color: var(--red);
+  margin-top: 50px;
 }
 
 .visit_starclub {
@@ -94,4 +82,124 @@ a {
 
 .explore-text {
   padding-bottom: 40px;
+}
+
+.explore_image {
+  margin-top: 50px;
+}
+
+#explorekids,
+#exploreteachers,
+#exploreresearchers {
+  position: relative;
+  top: -100px;
+}
+
+/*Screen sizes*/
+@media only screen and (min-width: 600px) {
+  main {
+    margin: 0 -50px;
+    padding: 50px;
+  }
+
+  .explore_heading {
+    height: 300px;
+    background-position-x: right;
+    background-position-y: top;
+    margin-right: -30px;
+  }
+
+  .explore_heading h1,
+  .explore_heading p {
+    width: 55%;
+    position: relative;
+    top: 50px;
+    margin-left: 100px;
+  }
+
+  .explore-visit,
+  .visit_starclub {
+    padding: 20px 40px 50px 40px;
+  }
+
+  .visit_starclub h2,
+  .visit_starclub p {
+    max-width: 60%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .explore-visit {
+    display: flex;
+  }
+
+  .explore_text {
+    flex: 1;
+    padding-right: 30px;
+  }
+
+  .explore_image {
+    flex: 1;
+    margin: auto;
+  }
+
+  .explore_image img {
+    border-radius: 5px;
+  }
+
+  .visit_starclub img {
+    border-radius: 1000px;
+  }
+
+  .visit_starclub {
+    border-radius: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    margin: 0 -100px;
+    padding: 100px;
+  }
+
+  .explore_heading h1,
+  .explore_heading p {
+    width: 55%;
+    margin-left: 200px;
+  }
+
+  .explore-visit,
+  .visit_starclub {
+    max-width: 1650px;
+    margin: 50px auto;
+  }
+
+  .visit_starclub img {
+    max-height: 350px;
+  }
+
+  .explore_text,
+  .starclub_text {
+    margin: auto;
+    margin-left: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .explore_heading h1 {
+    padding-top: 50px;
+  }
+
+  .explore_heading h1,
+  .explore_heading p {
+    margin: auto;
+    text-align: center;
+  }
+
+  .explore_heading {
+    background-size: contain;
+    height: 400px;
+    margin-right: -100px;
+  }
 }

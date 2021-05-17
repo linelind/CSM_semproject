@@ -61,15 +61,6 @@
   margin-bottom: 50px;
 }
 
-.cta-contact {
-  background-color: var(--white);
-  padding: 7px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
 /*tablet*/
 @media only screen and (min-width: 600px) {
   .header_container {
@@ -131,5 +122,21 @@
     background-position-x: 280px;
     padding-left: 100px;
     padding-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .quote-container,
+  .question-container {
+    margin-left: -110px;
+    margin-right: -110px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .question-container {
+    background-size: 600px;
+    background-position-y: center;
+    background-position-x: right;
   }
 }
