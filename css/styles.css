@@ -385,7 +385,7 @@ footer p {
   }
 
   nav a:hover {
-    text-decoration: overline wavy 2px var(--light-purple);
+    text-decoration: overline 1px var(--light-purple);
   }
 
   header .fas {
