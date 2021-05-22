@@ -157,6 +157,15 @@ form option,
 
 .cta {
   color: var(--white);
+}
+
+.cta-contact {
+  background-color: var(--white);
+  border: 1px solid var(--white);
+}
+
+.cta,
+.cta-contact {
   padding: 7px 25px;
   border-radius: 5px;
   text-decoration: none;
@@ -164,13 +173,13 @@ form option,
   letter-spacing: 1px;
 }
 
-.cta-contact {
-  background-color: var(--white);
-  padding: 7px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 1px;
+.cta:hover,
+.cta-contact:hover {
+  background-color: transparent;
+}
+
+.cta-contact:hover {
+  color: var(--white);
 }
 
 .visit-link,
@@ -373,6 +382,10 @@ footer p {
 
   nav a {
     color: var(--black);
+  }
+
+  nav a:hover {
+    text-decoration: overline wavy 2px var(--light-purple);
   }
 
   header .fas {

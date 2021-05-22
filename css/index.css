@@ -8,6 +8,11 @@ h2 {
 
 .cta-visit {
   background-color: var(--dark-purple);
+  border: 1px solid var(--dark-purple);
+}
+
+.cta-visit:hover {
+  color: var(--dark-purple);
 }
 
 .fa-clock {
@@ -48,6 +53,13 @@ h2 {
   color: var(--white);
   padding: 20px 40px;
   margin-bottom: 20px;
+  border: 1px solid var(--black);
+}
+
+.cta_red:hover,
+.cta_green:hover,
+.cta_blue:hover {
+  border: 1px solid var(--white);
 }
 
 /*News*/

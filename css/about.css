@@ -127,7 +127,7 @@
   .question-container {
     background-size: 600px;
     background-position-y: center;
-    background-position-x: right;
+    background-position-x: 450px;
   }
 
   .contribution {
@@ -153,5 +153,9 @@
 
   .quote-container {
     margin: 0;
+  }
+
+  .question-container {
+    background-position-x: right;
   }
 }
