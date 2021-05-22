@@ -190,7 +190,7 @@ main p {
   }
 
   main {
-    margin: 0 -100px;
+    margin: 0 -50px;
     padding-top: 100px;
     padding-bottom: 0;
   }
@@ -203,7 +203,7 @@ main p {
 
   .explore-visit,
   .visit_starclub {
-    max-width: 1650px;
+    max-width: 1000px;
     margin: 50px auto;
   }
 
@@ -221,12 +221,11 @@ main p {
 
 @media only screen and (min-width: 1500px) {
   main {
-    margin: -20px -100px;
-    padding: 80px;
+    margin: 0;
+    padding: 0;
   }
-
   .explore_heading h1 {
-    padding-top: 50px;
+    padding-top: 100px;
   }
 
   .explore_heading h1,
@@ -237,10 +236,10 @@ main p {
   }
 
   .explore_heading {
-    background-size: contain;
-    background-position-y: 30px;
-    background-position-x: 1100px;
+    background-size: 350px;
+    background-position-y: 65px;
+    background-position-x: right;
     height: 450px;
-    margin-right: -100px;
+    margin: 0 -100px;
   }
 }
