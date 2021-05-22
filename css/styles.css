@@ -207,16 +207,23 @@ footer p {
 }
 
 .social-media {
-  color: var(--dark-purple);
-  font-size: 2rem;
   display: flex;
   justify-content: space-evenly;
   margin: 25px 80px;
 }
 
+.social-media_icon {
+  color: var(--dark-purple);
+  font-size: 2rem;
+}
+
 #contact {
   position: relative;
   top: -100px;
+}
+
+.screen-reader {
+  display: none;
 }
 
 /*Screen sizes*/
