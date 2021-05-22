@@ -59,8 +59,9 @@ h2 {
 .home_news {
   background-color: var(--dark-purple);
   padding: 20px;
-  margin: 30px -10px;
+  margin: 30px auto;
   border-radius: 5px;
+  max-width: 350px;
 }
 
 .home_news p {
@@ -94,12 +95,12 @@ h2 {
   }
 
   .new_heading {
-    margin: 100px auto 50px auto;
+    margin: 80px auto 20px auto;
   }
 
   .home_news {
     padding: 50px 40px;
-    max-width: 588px;
+    max-width: 430px;
     margin: 80px auto;
   }
 
@@ -115,7 +116,7 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 800px) {
   .home_container {
     display: flex;
   }
@@ -129,8 +130,26 @@ h2 {
 
   .home_explore {
     flex: 2;
-    margin: 100px -60px 0 100px;
+    margin: 100px -60px 0 50px;
     padding: 0 40px;
+    background-size: 230px;
+    background-position-x: 270px;
+    background-position-y: 70px;
+  }
+
+  .explore-cta {
+    width: 210px;
+  }
+
+  .home-hours {
+    margin-right: 0px;
+    padding-right: 30px;
+    min-width: 240px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .home_explore {
     background-size: 300px;
     background-position-x: right;
     background-position-y: 30px;
@@ -141,7 +160,7 @@ h2 {
   }
 
   .home_news {
-    max-width: 800px;
+    max-width: 650px;
   }
 
   .news_text,
@@ -160,7 +179,7 @@ h2 {
 
 @media only screen and (min-width: 1200px) {
   .home_container {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .home-hours {
@@ -173,30 +192,42 @@ h2 {
 
   .home_explore {
     padding-top: 35px;
-    background-position-x: right;
-    background-position-y: 30px;
+    background-position-x: 300px;
+    background-position-y: 70px;
     max-width: 750px;
     height: 385px;
     margin: auto;
   }
 
   .explore-cta {
-    width: 300px;
     margin-top: 60px;
   }
 
   .home_news {
-    max-width: 1000px;
+    max-width: 750px;
+  }
+
+  .visit-link {
+    margin-top: 80px;
   }
 }
 
 @media only screen and (min-width: 1500px) {
   .header_container {
-    background-position-y: -130px;
+    background-position-y: -50px;
   }
 
-  .home-hours {
-    max-width: 650px;
-    padding-left: 100px;
+  .explore-cta {
+    width: 270px;
+  }
+
+  .home_explore {
+    background-size: 350px;
+    background-position-x: right;
+    background-position-y: center;
+  }
+
+  .home_news {
+    max-width: 850px;
   }
 }

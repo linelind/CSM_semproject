@@ -52,17 +52,6 @@ main img {
 
 @media only screen and (min-width: 1200px) {
   .exhibition_container {
-    margin: 0 -110px;
-    padding: 50px 110px;
-  }
-}
-
-@media only screen and (min-width: 1500px) {
-  .header_container {
-    margin-bottom: 50px;
-  }
-
-  .exhibition_container {
     border: 3px solid var(--light-purple);
     border-radius: 5px;
     margin: 50px 0 0 0;
@@ -70,5 +59,9 @@ main img {
 
   .exhibition_container img {
     border-radius: 5px;
+  }
+
+  .exhibit_text {
+    margin: auto;
   }
 }

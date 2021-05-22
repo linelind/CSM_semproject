@@ -79,8 +79,6 @@
 
 .info_image {
   flex: 1;
-  margin: auto;
-  padding-left: 20px;
 }
 
 .food img,
@@ -155,8 +153,6 @@ form,
 
   .info_image {
     position: relative;
-    max-width: 70%;
-    padding-left: 0;
     margin-top: 10px;
     margin-bottom: 15px;
   }
@@ -167,6 +163,8 @@ form,
 
   .container {
     text-align: center;
+    max-width: 280px;
+    margin: 50px auto;
   }
 
   .food img,
@@ -203,7 +201,7 @@ form,
   }
 
   .container {
-    max-width: 670px;
+    max-width: 530px;
     margin: 40px auto;
   }
 
@@ -221,21 +219,25 @@ form,
     margin: 0 -60px;
     padding: 30px 90px;
   }
+
+  .admission p {
+    max-width: 530px;
+  }
+
+  .visit_info p {
+    max-width: 300px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .admission,
-  .visit_container {
-    margin: 0 -110px;
-    padding: 60px 110px;
+  .visit_container,
+  .contact {
+    margin: 0;
   }
 
   .admission img {
     max-height: 350px;
-  }
-
-  .contact {
-    margin: 0 -110px;
   }
 
   .contact h2 {
@@ -245,11 +247,14 @@ form,
 
   .contact-inputs {
     margin-right: 50px;
-    min-width: 300px;
   }
 
   .contact-message {
     margin-left: 50px;
+  }
+
+  .contact-inputs,
+  .contact-message {
     min-width: 300px;
   }
 
@@ -264,13 +269,5 @@ form,
 
   .cta-send {
     margin-left: -125px;
-  }
-}
-
-@media only screen and (min-width: 1500px) {
-  .admission,
-  .visit_container,
-  .contact {
-    margin: 0;
   }
 }

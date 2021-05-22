@@ -29,8 +29,9 @@
 .contribution {
   background-color: var(--blue);
   padding: 10px 25px;
-  margin-top: 30px;
   border-radius: 5px;
+  max-width: 390px;
+  margin: 50px auto;
 }
 
 .about_contributions h2,
@@ -62,28 +63,11 @@
 }
 
 /*screen sizes*/
-
-@media only screen and (min-width: 600px) and (max-width: 1199px) {
-  .contribution {
-    max-width: 450px;
-    margin: 50px auto;
-  }
-}
-
 @media only screen and (min-width: 600px) {
   .header_container {
     background-image: url(../images/about/about_cover.jpg);
     background-position-y: center;
     margin-bottom: 80px;
-  }
-
-  .quote-container {
-    margin: 60px -60px;
-    padding: 30px 60px 60px 60px;
-  }
-
-  .quote-container img {
-    margin-bottom: 50px;
   }
 
   .question-container {
@@ -97,17 +81,12 @@
   .question-container p {
     max-width: 50%;
   }
-}
 
-@media only screen and (min-width: 800px) {
-  .quote-container,
   .quote-container {
     display: flex;
     margin-bottom: 0;
-  }
-
-  .quote-container img {
-    margin-bottom: -30px;
+    margin: 60px -60px;
+    padding: 30px 60px 15px 40px;
   }
 
   .quote-container_image,
@@ -115,6 +94,13 @@
     flex: 1;
     margin: auto;
     padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .contribution {
+    max-width: 640px;
+    padding: 30px 50px;
   }
 }
 
@@ -129,12 +115,13 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .about_info {
+    margin: 50px 60px;
+  }
+
   .quote-container,
   .question-container {
-    margin-left: -110px;
-    margin-right: -110px;
-    padding-left: 90px;
-    padding-right: 90px;
+    margin: 0;
   }
 
   .question-container {
@@ -144,29 +131,27 @@
   }
 
   .contribution {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 30px 100px;
-  }
-
-  .contribution h2,
-  .contribution p {
-    text-align: left;
+    margin: 70px auto;
   }
 }
 
 @media only screen and (min-width: 1500px) {
-  .about_info {
-    margin: 50px 100px;
+  .motto {
+    max-width: 500px;
   }
 
-  .quote-container,
-  .question-container {
-    margin: 0;
+  .about_info {
+    max-width: 650px;
+    margin-bottom: 100px;
   }
+
   .question-container h2,
   .question-container p,
   .question-container a {
     margin-left: 10px;
+  }
+
+  .quote-container {
+    margin: 0;
   }
 }
