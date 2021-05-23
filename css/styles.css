@@ -22,6 +22,7 @@
 
 /*General styles*/
 
+/*framework and navigation*/
 body {
   margin: 0 20px;
 }
@@ -106,6 +107,7 @@ img {
   margin: auto -30px;
 }
 
+/*fonts*/
 h1 {
   font-family: 'Orbitron SemiBold', Verdana, Tahoma, sans-serif;
   font-size: 1.5rem;
@@ -123,10 +125,6 @@ h3 {
   font-size: 0.875rem;
 }
 
-p {
-  line-height: 2;
-}
-
 p,
 li,
 a,
@@ -135,15 +133,11 @@ form option,
 .cta {
   font-family: 'Montserrat Regular', Verdana, Tahoma, sans-serif;
   color: var(--black);
+  font-size: 0.75rem;
 }
 
-p,
-li,
-a,
-label,
-form option,
-.cta {
-  font-size: 0.75rem;
+p {
+  line-height: 2;
 }
 
 .motto {
@@ -155,6 +149,7 @@ form option,
   font-size: 0.875rem;
 }
 
+/*cta*/
 .cta {
   color: var(--white);
 }
@@ -202,6 +197,7 @@ form option,
   background-color: var(--blue);
 }
 
+/*footer*/
 footer {
   padding-top: 40px;
   max-width: 350px;

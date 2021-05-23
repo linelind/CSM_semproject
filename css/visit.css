@@ -44,9 +44,9 @@
 
 .accessibility {
   background-color: var(--blue);
-  color: var(--white);
 }
 
+.accessibility,
 .accessibility h2,
 .accessibility p {
   color: var(--white);

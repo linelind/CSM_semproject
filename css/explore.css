@@ -54,6 +54,7 @@ main p {
 
 .visit_starclub {
   background-color: var(--dark-purple);
+  display: flex;
 }
 
 .visit_teachers {
@@ -62,10 +63,6 @@ main p {
 
 .visit_researchers {
   background-color: var(--blue);
-}
-
-.visit_starclub {
-  display: flex;
 }
 
 .starclub_text {
@@ -214,7 +211,6 @@ main p {
   .explore_text,
   .starclub_text {
     margin: auto;
-    margin-left: 50px;
     margin-left: 50px;
   }
 }
