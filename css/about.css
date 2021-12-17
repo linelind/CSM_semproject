@@ -35,7 +35,8 @@
 }
 
 .about_contributions h2,
-.about_contributions p {
+.about_contributions p,
+.about_contributions .fas {
   color: var(--white);
   text-align: center;
 }
@@ -60,6 +61,11 @@
 
 .question-container p {
   margin-bottom: 50px;
+}
+
+.contribution .fas {
+  font-size: 1.5rem;
+  margin-left: 5px;
 }
 
 /*screen sizes*/
@@ -101,6 +107,11 @@
   .contribution {
     max-width: 640px;
     padding: 30px 50px;
+  }
+
+  .contribution .fas {
+    font-size: 1.8rem;
+    margin-left: 10px;
   }
 }
 
