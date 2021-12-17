@@ -12,6 +12,11 @@ function validateForm(event) {
 
     event.preventDefault();
 
+    if(successMessage.style.display = "block") {
+        successMessage.style.display = "none";
+    }
+  
+
     if(checkLength(formName.value, 0) === true) {
         formNameError.style.display = "none";
     } 
@@ -36,16 +41,14 @@ function validateForm(event) {
 
 function confirmSending() {
     if (checkLength(formName.value, 0) && validateEmail(formEmail.value) && checkLength(formMessage.value, 25)) {
-        
+
         contactForm.reset();
-        sendButton.value = "Sent";
         successMessage.style.display = "block";
     } 
 }
 
 contactForm.addEventListener("submit", validateForm);
 contactForm.addEventListener("submit", confirmSending);
-
 
 function checkLength(value, len) {
     if (value.trim().length > len) {
