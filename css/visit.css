@@ -141,6 +141,25 @@ form,
   margin-bottom: 30px;
 }
 
+.successMessage {
+  display: none;
+  color: var(--green);
+  margin-top: -20px;
+}
+
+.formError {
+  display: none;
+  font-family: 'Montserrat Regular', Verdana, Tahoma, sans-serif;
+  color: var(--red);
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-size: 0.7rem;
+}
+
+#messageError {
+  margin-top: -33px;
+}
+
 /*screen sizes*/
 @media only screen and (max-width: 599px) {
   .admission,
@@ -271,7 +290,8 @@ form,
     height: 185px;
   }
 
-  .cta-send {
+  .cta-send,
+  .successMessage {
     margin-left: -125px;
   }
 }

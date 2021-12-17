@@ -112,6 +112,10 @@
     padding-left: 100px;
     padding-top: 60px;
   }
+
+  .motto {
+    max-width: 500px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -136,10 +140,6 @@
 }
 
 @media only screen and (min-width: 1500px) {
-  .motto {
-    max-width: 500px;
-  }
-
   .about_info {
     max-width: 650px;
     margin-bottom: 100px;

@@ -133,7 +133,7 @@ form option,
 .cta {
   font-family: 'Montserrat Regular', Verdana, Tahoma, sans-serif;
   color: var(--black);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 p {
@@ -141,8 +141,11 @@ p {
 }
 
 .motto {
-  font-size: 1rem;
   margin-top: -10px;
+  font-family: 'Montserrat Regular', Verdana, Tahoma, sans-serif;
+  color: var(--black);
+  font-weight: lighter;
+  font-size: 1rem;
 }
 
 .larger-text {
@@ -231,6 +234,10 @@ footer p {
   display: none;
 }
 
+.social-media a:hover {
+  transform: scale(1.06);
+}
+
 /*Screen sizes*/
 @media only screen and (min-width: 600px) {
   body {
@@ -258,7 +265,7 @@ footer p {
     background-color: var(--white);
     position: relative;
     padding: 10px 60px;
-    top: 299px;
+    top: 311px;
     max-width: 50%;
   }
 
@@ -288,22 +295,12 @@ footer p {
     font-size: 1.75rem;
   }
 
-  h2,
-  .motto {
+  h2 {
     font-size: 1.25rem;
   }
 
   h3 {
     font-size: 1.125rem;
-  }
-
-  p,
-  li,
-  a,
-  label,
-  form option,
-  .cta {
-    font-size: 0.75rem;
   }
 
   .larger-text {
@@ -371,17 +368,18 @@ footer p {
 
   nav li {
     display: inline-flex;
-    padding-right: 10px;
-    margin-top: 0;
-    font-size: 0.75rem;
+    padding-right: 5px;
+    margin-top: -5px;
   }
 
   nav a {
     color: var(--black);
+    font-size: 0.9rem;
   }
 
-  nav a:hover {
-    text-decoration: overline 1px var(--light-purple);
+  nav a:not(.current):hover {
+    border-top: 2px solid var(--light-purple);
+    padding-top: 2px;
   }
 
   header .fas {
@@ -418,15 +416,14 @@ footer p {
   }
 
   .header_text {
-    top: 370px;
+    top: 376px;
   }
 
   h1 {
     font-size: 2rem;
   }
 
-  h2,
-  .motto {
+  h2 {
     font-size: 1.5rem;
   }
 

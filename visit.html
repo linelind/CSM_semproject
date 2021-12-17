@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself. Come visit the Community Science Museum yourself to take part in this wonderful journey." />
+    <meta name="description" content="Over the course of human history, science has developed greatly. Come visit the Community Science Museum yourself to take part in this wonderful journey" />
     <title>CSM | Visit CSM</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/visit.css" rel="stylesheet" />
@@ -97,9 +97,11 @@
             <div class="form-wrapper">
               <section class="contact-inputs">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="Name" required />
+                <input type="text" id="name" name="Name" />
+                <div class="formError" id="nameError">Please enter your name.</div>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="Email" required />
+                <input type="email" id="email" name="Email" />
+                <div class="formError" id="emailError">Please enter your email address.</div>
                 <label for="topic">Role</label>
                 <select id="topic" name="Choose topic">
                   <option value="Visitor">Visitor</option>
@@ -111,9 +113,11 @@
               </section>
               <section class="contact-message">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message"></textarea>
+                <div class="formError" id="messageError">Must be more than 25 characters.</div>
               </section>
             </div>
+            <p class="successMessage">You message has been sent!</p>
             <input type="submit" value="Send" class="cta cta-send" />
           </form>
         </section>
@@ -137,5 +141,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

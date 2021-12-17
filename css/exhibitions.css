@@ -32,6 +32,10 @@ main img {
   .exhibition_container p {
     margin-bottom: 30px;
   }
+
+  .header_text {
+    top: 326px;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -48,6 +52,10 @@ main img {
     margin: auto;
     padding-left: 30px;
   }
+
+  .header_text {
+    top: 308px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -63,5 +71,15 @@ main img {
 
   .exhibit_text {
     margin: auto;
+  }
+
+  .header_text {
+    top: 403px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .header_text {
+    top: 397px;
   }
 }
